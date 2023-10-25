@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Container Styles */
+#container {
+  height: 350px;
+  border: 2px solid red;
+  padding: 20px;
+}
+
+#container h1 {
+  text-align: center;
+  background-color: bisque;
+}
+/* Content Styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.left {
+  height: 200px;
+  background-color: bisque;
+  margin-right: 20px;
+}
+
+.right img {
+  height: 200px;
+}
+
+/* Feature Styles */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  border: 2px solid green;
+}
+
+.feature {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  border: 1px solid green;
+  text-align: center;
+  margin: 10px;
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This property ensures the image covers the entire space */
+}
+
+/* Contact Section Styles */
+#contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.contact-details {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px;
+}
+
+.contact-form {
+  background-color: aqua;
+  padding: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.social img {
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  /* Header Adjustments */
+  .logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px;
+  }
+
+  /* Container Adjustments */
+  #container {
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  /* Feature Adjustments */
+  #features {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 10px 0;
+  }
+
+  /* Contact Section Adjustments */
+  #contact {
+    flex-direction: column;
+  }
+}
