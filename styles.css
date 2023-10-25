@@ -153,6 +153,7 @@ footer {
 
   .content {
     flex-direction: column;
+    flex-flow: column-reverse; /* This makes .left appear above h3 heading */
   }
 
   /* Feature Adjustments */
@@ -168,4 +169,15 @@ footer {
   #contact {
     flex-direction: column;
   }
+
+  .left {
+    margin: 10px 40px 10px 40px;
+    border: 2px red solid;
+    height: auto;
+  }
+
+  .right {
+   }
+
+
 }
