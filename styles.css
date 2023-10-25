@@ -132,6 +132,10 @@ footer {
 
 /* Media Queries for Responsive Layout */
 @media (max-width: 768px) {
+  body {
+    background-image: url(https://img.freepik.com/free-photo/vertical-shot-patterns-sands-desert_181624-29789.jpg?w=740&t=st=1698232764~exp=1698233364~hmac=5edf4e1afb45af3a46240c2d731e2bbf88938f90dbb551edff8e7a2918b28c2d);
+  }
+  
   /* Header Adjustments */
   .logo {
     text-align: center;
@@ -149,7 +153,11 @@ footer {
   /* Container Adjustments */
   #container {
     text-align: center;
-    height: auto;
+    height: auto; /*
+    background-image: url(https://img.freepik.com/free-photo/still-life-with-cozy-variety-yarn-knitting_169016-5806.jpg?w=740&t=st=1698232606~exp=1698233206~hmac=e147b620aab33e15cb447120c7fb8a7ce0a15840e2eba83308c2adb841a2b286);
+    */
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .content {
@@ -181,11 +189,12 @@ footer {
 
   /* Contact Section Adjustments */
   #contact {
+    margin: auto;
     flex-direction: column;
     border: 2px red solid;
     background-image: url(https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?w=740&t=st=1698232140~exp=1698232740~hmac=9ff5f0f2a7e5f560f09c67f66a9e596996b964f6f8306f0080c0ed164b964328);
 
-    
+
   }
 
   .contact-details {
@@ -216,9 +225,30 @@ footer {
     float: inline-end;
     margin-top: -30%; /* This makes button float right inline with email */
     width: 20%;
-    height: 50px;
-
+    height: 50px; 
+    
+  }
 
 }
+
+@media (max-width: 715px) {
+
+  #contact {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .contact-details {
+    width: 60%
+  }
+
+  .contact-form {
+    display: flex;
+    width: fit-content;
+  }
+
+  #submit-btn {
+    float: inherit;
+  }
 
 }
