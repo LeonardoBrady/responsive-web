@@ -105,7 +105,7 @@ nav a {
   background-color: bisque;
   width: 300px;
   padding: 10px;
-  border: 1px grey dotted;
+  border: 1px grey solid;
   margin-left: 50px;
 }
 
@@ -113,7 +113,7 @@ nav a {
   background-color: bisque;
   padding: 10px;
   margin-right: 50px;
-  border: 1px dotted;
+  border: 1px solid;
 }
 
 /* Footer Styles */
@@ -157,6 +157,13 @@ footer {
     flex-flow: column-reverse; /* This makes .left appear above h3 heading */
   }
 
+  .left {
+    margin: 10px 40px 10px 40px;
+    border: 2px red solid;
+    height: auto;
+  }
+
+
   /* Feature Adjustments */
   #features {
     display: flex;
@@ -175,15 +182,43 @@ footer {
   /* Contact Section Adjustments */
   #contact {
     flex-direction: column;
-  }
-
-  .left {
-    margin: 10px 40px 10px 40px;
     border: 2px red solid;
-    height: auto;
+    background-image: url(https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?w=740&t=st=1698232140~exp=1698232740~hmac=9ff5f0f2a7e5f560f09c67f66a9e596996b964f6f8306f0080c0ed164b964328);
+
+    
   }
 
-  .right {}
+  .contact-details {
+    width: auto;
+    height: auto;
+    margin: 15%;
+  }
 
+  .contact-form {
+    width: auto;
+    height: auto;
+    margin: 15%;
+  }
+
+  .contact-details h2 {
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+  }
+
+  #name, #email {
+    width: 66%;
+  }
+
+  #submit-btn {
+    float: inline-end;
+    margin-top: -30%; /* This makes button float right inline with email */
+    width: 20%;
+    height: 50px;
+
+
+}
 
 }
