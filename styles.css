@@ -40,7 +40,6 @@ nav a {
 /* Container Styles */
 #container {
   height: 350px;
-  border: 2px solid red;
   padding: 20px;
 }
 
@@ -71,13 +70,12 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
-  border: 2px solid green;
 }
 
 .feature {
   width: 200px; /* Set the desired width */
   height: 200px; /* Set the desired height */
-  border: 1px solid green;
+  border: 1px solid rgb(0, 0, 0);
   text-align: center;
   margin: 10px;
   margin-bottom: 55px; /* This lowers the margin to fit h4's feature */
@@ -105,7 +103,7 @@ nav a {
   background-color: bisque;
   width: 300px;
   padding: 10px;
-  border: 1px grey dotted;
+  border: 1px grey solid;
   margin-left: 50px;
 }
 
@@ -113,7 +111,7 @@ nav a {
   background-color: bisque;
   padding: 10px;
   margin-right: 50px;
-  border: 1px dotted;
+  border: 1px solid;
 }
 
 /* Footer Styles */
@@ -132,6 +130,14 @@ footer {
 
 /* Media Queries for Responsive Layout */
 @media (max-width: 768px) {
+  body {
+    background-image: url(https://img.freepik.com/free-photo/vertical-shot-patterns-sands-desert_181624-29789.jpg?w=740&t=st=1698232764~exp=1698233364~hmac=5edf4e1afb45af3a46240c2d731e2bbf88938f90dbb551edff8e7a2918b28c2d);
+    background-position: center;
+    background-size: contain;
+
+
+  }
+  
   /* Header Adjustments */
   .logo {
     text-align: center;
@@ -152,10 +158,21 @@ footer {
     height: auto;
   }
 
+  #container h1 {
+    border: 2px rgb(0, 0, 0) solid;
+  }
+
   .content {
     flex-direction: column;
     flex-flow: column-reverse; /* This makes .left appear above h3 heading */
   }
+
+  .left {
+    margin: 10px 40px 10px 40px;
+    border: 2px rgb(0, 0, 0) solid;
+    height: auto;
+  }
+
 
   /* Feature Adjustments */
   #features {
@@ -174,16 +191,67 @@ footer {
 
   /* Contact Section Adjustments */
   #contact {
+    margin: auto;
     flex-direction: column;
+    background-image: url(https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?w=740&t=st=1698232140~exp=1698232740~hmac=9ff5f0f2a7e5f560f09c67f66a9e596996b964f6f8306f0080c0ed164b964328);
+    background-size: contain;
   }
 
-  .left {
-    margin: 10px 40px 10px 40px;
-    border: 2px red solid;
+  .contact-details {
+    width: auto;
     height: auto;
+    margin: 15%;
   }
 
-  .right {}
+  .contact-form {
+    width: auto;
+    height: auto;
+    margin: 15%;
+  }
 
+  .contact-details h2 {
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+  }
+
+  #name, #email {
+    width: 66%;
+  }
+
+  #submit-btn {
+    float: inline-end;
+    margin-top: -30%; /* This makes button float right inline with email */
+    width: 20%;
+    height: 50px; 
+    
+  }
+
+}
+
+@media (max-width: 715px) {
+
+  #contact {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .contact-details {
+    width: 60%
+  }
+
+  .contact-form {
+    max-width: fit-content;
+  }
+
+  #submit-btn {
+    float: inherit;
+  }
+
+  #message {
+    max-width: 90%;
+  }
 
 }
