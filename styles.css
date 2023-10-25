@@ -149,6 +149,7 @@ footer {
   /* Container Adjustments */
   #container {
     text-align: center;
+    height: auto;
   }
 
   .content {
@@ -158,11 +159,17 @@ footer {
 
   /* Feature Adjustments */
   #features {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://previews.123rf.com/images/mholka/mholka1201/mholka120100146/12434308-knitted-wool-background.jpg);
+    background-repeat: no-repeat;
+
+
   }
 
   .feature {
-    margin: 10px 0;
+    margin-bottom: 55px;
+    width: 50%;
   }
 
   /* Contact Section Adjustments */
@@ -176,8 +183,7 @@ footer {
     height: auto;
   }
 
-  .right {
-   }
+  .right {}
 
 
 }
